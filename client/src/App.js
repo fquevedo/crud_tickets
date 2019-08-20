@@ -203,7 +203,6 @@ function TicketList(props){
     
       })
     }
-
     (localStorage.getItem('rol') == 1) ? getUserTickets() : getTickets()
     setNeedRefreshTable(0)
     },[needRefresh, props]);
