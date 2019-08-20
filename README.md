@@ -20,9 +20,9 @@ These instructions will get you a copy of the project up and running on your loc
 #### Install via git clone
 ```
 1. $ git clone https://github.com/fquevedo/crud_tickets
-$ 2. cd crud_tickets
-$ 3. composer install
-$ 4. cd client && npm install
+2. $ cd crud_tickets
+3. $ composer install
+4. $ cd client && npm install
 ```
 ### Database Configuration
 First import database.sql (located in root) from MySQL and call "gestion_tickets" to this new database
@@ -51,12 +51,12 @@ then set database name, user and password on database.php configuration laravel 
 #### Deploy
 deploy Client server using this command:
 ```
-$ 5. npm start
+5. $ npm start
 ```
 
 open another cmd in crud_tickets folder to deploy API Server and use this command:
 ```
-$ 6. php artisan serve
+6. $ php artisan serve
 ```
 
 
