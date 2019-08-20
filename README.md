@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 4. $ cd client && npm install
 ```
 ### Database Configuration
-First import database.sql (located in root) from MySQL and call "gestion_tickets" to this new database
+First import database.sql (located in root) from MySQL and call "gestion_tickets" to the new database
 then set database name, user and password on database.php configuration laravel file:
 ```
         'mysql' => [
