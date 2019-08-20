@@ -29,12 +29,12 @@ Dont forget to import database.sql from MySQL and call it "gestion_tickets"
 #### Deploy
 to deploy Server use this command:
 ```
-$ 4. $ cd..
-$ 5. $ php artisan serve
+$ 5. $ cd..
+$ 6. $ php artisan serve
 ```
 in the same root open another cmd and deploy Client using this command:
 ```
-$ 6. cd cliente && npm start
+$ 7. cd cliente && npm start
 ```
 
 ## Running the tests
