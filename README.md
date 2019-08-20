@@ -31,7 +31,7 @@ to deploy Server use this command:
 ```
 $ 5. $ php artisan serve
 ```
-in another cmd deploy Client using this command:
+in the same root open another cmd and deploy Client using this command:
 ```
 $ 6. cd cliente && npm start
 ```
