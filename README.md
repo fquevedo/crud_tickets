@@ -1,6 +1,6 @@
 #Crud Tickets 
 
-Its Rest API server side and React Client side, deploy for Saltala HC Partners. 
+Its Rest API server side and React Client side, developed for Saltala HC Partners. 
 Technologies: Laravel Rest API Server and React JavaScript Client
 
 ## Getting Started
