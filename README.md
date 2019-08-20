@@ -45,3 +45,4 @@ $ 6. cd cliente && npm start
 * [Postman](https://www.getpostman.com/) - For test Api requests
 
 ## Authors
+* **Fernando Quevedo** - *Initial work* - [fquevedo](https://github.com/fquevedo)
