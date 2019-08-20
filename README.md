@@ -28,11 +28,11 @@ Dont forget to import database.sql from MySQL
 #### Deploy
 to deploy Server use this command:
 ```
-5. $ php artisan serve
+$ 5. $ php artisan serve
 ```
 in another cmd deploy Client using this command:
 ```
-6. cd cliente && npm start
+$ 6. cd cliente && npm start
 ```
 
 ## Running the tests
