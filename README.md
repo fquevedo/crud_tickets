@@ -26,7 +26,7 @@ $ 4. cd client && npm install
 ```
 ### Database Configuration
 First import database.sql (located in root) from MySQL and call "gestion_tickets" to this new database
-Set database name, user and password on database.php configuration laravel file:
+then set database name, user and password on database.php configuration laravel file:
 ```
         'mysql' => [
             'driver' => 'mysql',
