@@ -30,7 +30,7 @@ Dont forget to import database.sql from MySQL and call it "gestion_tickets"
 to deploy Server use this command:
 ```
 
-$ 6. $ cd.. && php artisan serve
+$ 5. $ cd.. && php artisan serve
 ```
 in the same root open another cmd and deploy Client using this command:
 ```
