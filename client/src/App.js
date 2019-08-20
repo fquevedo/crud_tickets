@@ -178,35 +178,36 @@ function TicketList(props){
   const [needRefresh, setNeedRefresh] = useState(0);
   const setNeedRefreshTable = (value) => setNeedRefresh(value);
 
+  
   useEffect(() =>{
-    (localStorage.getItem('rol') == 1) ? 
-      getUserTickets()
-    :
-      getTickets()
-    setNeedRefreshTable(0)
-    },[needRefresh, props.refreshFromAdmin]);
+    
+    const getTickets = () => {
+      axios
+      .get('http://localhost:8000/api/gettickets?api_token='+localStorage.getItem('token'))
+      .then(res => {
+          setTickets(res.data)
+        })
+      .catch(err => {
+        props.onSetData({auth:true, warning: 'imposible to get tickets'});
+      })
+    }
+    
+    const getUserTickets = () => {
+      const data = {user_id : localStorage.getItem('user_id')}
+      axios
+      .post('http://localhost:8000/api/getusertickets?api_token='+localStorage.getItem('token'), data,{headers: { 'content-type': 'application/json' }})
+      .then(res => {
+          setTickets(res.data)
+        })
+      .catch(err => {
+        props.onSetData({auth:true, warning: 'imposible to get tickets'});
+      })
+    }
 
-  const getTickets = () => {
-    axios
-    .get('http://localhost:8000/api/gettickets?api_token='+localStorage.getItem('token'))
-    .then(res => {
-        setTickets(res.data)
-      })
-    .catch(err => {
-      props.onSetData({auth:true, warning: 'imposible to get tickets'});
-    })
-  }
-  const getUserTickets = () => {
-    const data = {user_id : localStorage.getItem('user_id')}
-    axios
-    .post('http://localhost:8000/api/getusertickets?api_token='+localStorage.getItem('token'), data,{headers: { 'content-type': 'application/json' }})
-    .then(res => {
-        setTickets(res.data)
-      })
-    .catch(err => {
-      props.onSetData({auth:true, warning: 'imposible to get tickets'});
-    })
-  }
+    (localStorage.getItem('rol') == 1) ? getUserTickets() : getTickets()
+    setNeedRefreshTable(0)
+    },[needRefresh, props]);
+
 
   const renderRows = () => {
         return tickets.map(function(elem, key){
