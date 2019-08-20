@@ -8,6 +8,7 @@ Technologies: Laravel Rest API Server and React JavaScript Client
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
+* Composer [https://getcomposer.org/](https://getcomposer.org/)
 * nodejs + npm [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 * XAMP (or another package that supports MySQL DB) [https://www.apachefriends.org/es/index.html](https://www.apachefriends.org/es/index.html)
 
