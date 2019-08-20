@@ -23,7 +23,7 @@ $ 2. cd crud_tickets
 $ 3. composer install
 $ 4. cd client && npm install
 ```
-Dont forget to import database.sql from MySQL
+Dont forget to import database.sql from MySQL and call it "gestion_tickets"
 
 #### Deploy
 to deploy Server use this command:
