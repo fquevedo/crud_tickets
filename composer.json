@@ -59,10 +59,6 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "init" : [
-            "cd client && npm start"
-            
-        ],
         "server" : [
             "@php artisan serve"
         ]
