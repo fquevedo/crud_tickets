@@ -200,7 +200,7 @@ function TicketList(props){
           setTickets(res.data)
         })
       .catch(err => {
-        props.onSetData({auth:true, warning: 'imposible to get tickets'});
+    
       })
     }
 
