@@ -1,6 +1,6 @@
 #Crud Tickets 
 
-React+Laravel+MySQL tickets management app with auth login, developed for Saltala HC Partners. 
+React+Laravel+MySQL app with tickets management and auth login, developed for Saltala HC Partners.  
 
 Technologies: Laravel Rest API Server and React JavaScript Client
 
