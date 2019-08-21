@@ -49,16 +49,10 @@ then set database name, user and password on database.php configuration laravel 
         ]
 ```
 #### Deploy
-deploy Client server using this command:
+deploy using this command:
 ```
-5. $ npm start
+5. $ npm run dev
 ```
-
-open another cmd in crud_tickets folder to deploy API Server and use this command:
-```
-6. $ php artisan serve
-```
-
 
 ## Running the tests
 [http://localhost:3000](https://localhost:3000)
