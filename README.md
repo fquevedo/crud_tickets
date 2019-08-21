@@ -2,7 +2,7 @@
 
 React+Laravel+MySQL app with tickets management and auth login, developed for Saltala HC Partners.  
 
-Technologies: Laravel Rest API Server and React JavaScript Client
+Technologies: Frontend React JavaScript, Backend Laravel Rest API Server with MySQL Data Base.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
