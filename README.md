@@ -1,8 +1,8 @@
 #Crud Tickets 
 
-Its a REST API Server side and React Client side, developed for Saltala HC Partners. 
+React+Laravel+MySQL app with tickets management and auth login
 
-Technologies: Laravel Rest API Server and React JavaScript Client
+Technologies: Frontend React JavaScript, Backend Laravel Rest API Server using MySQL Data Base.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -19,22 +19,46 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### Install via git clone
 ```
-$ 1. git clone https://github.com/fquevedo/crud_tickets
-$ 2. cd crud_tickets
-$ 3. composer install
-$ 4. cd client && npm install
+1. $ git clone https://github.com/fquevedo/crud_tickets
+2. $ cd crud_tickets
+3. $ composer install
+4. $ cd client && npm install
 ```
-Dont forget to import database.sql from MySQL and call it "gestion_tickets"
-
+### Database Configuration
+First import database.sql (located in root) from MySQL and call "gestion_tickets" to the new database
+then set database name, user and password on database.php configuration laravel file:
+```
+        'mysql' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'gestion_tickets'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ]
+```
 #### Deploy
-to deploy Server use this command:
+deploy Client server using this command:
 ```
-$ 5. $ php artisan serve
+5. $ npm start
 ```
-in the same root open another cmd and deploy Client using this command:
+
+open another cmd in crud_tickets folder to deploy API Server and use this command:
 ```
-$ 6. cd cliente && npm start
+6. $ php artisan serve
 ```
+
 
 ## Running the tests
 [http://localhost:3000](https://localhost:3000)
