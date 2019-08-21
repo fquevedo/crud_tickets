@@ -1,6 +1,6 @@
 #Crud Tickets 
 
-Its a Tickets Management with Auth login, developed for Saltala HC Partners. 
+Tickets Management example with Auth login, developed for Saltala HC Partners. 
 
 Technologies: Laravel Rest API Server and React JavaScript Client
 
