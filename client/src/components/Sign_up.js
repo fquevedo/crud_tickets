@@ -9,7 +9,7 @@ const options = [
   { key: '2', text: 'Admin', value: '2' },
 ]
 
-class Signup extends React.Component{
+class Sign_up extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -76,7 +76,7 @@ class Signup extends React.Component{
   }
 };
 
-export default Signup;
+export default Sign_up;
 
 
 
